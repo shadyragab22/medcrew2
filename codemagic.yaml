@@ -3,10 +3,21 @@ workflows:
     name: MedCrew Android
     max_build_duration: 30
     environment:
-      flutter: stable
+      flutter: 3.24.5
     scripts:
       - name: Get Flutter packages
         script: flutter packages pub get
+      - name: Pin Gradle wrapper version
+        script: |
+          cd android
+          mkdir -p gradle/wrapper
+          cat > gradle/wrapper/gradle-wrapper.properties << 'EOF'
+          distributionBase=GRADLE_USER_HOME
+          distributionPath=wrapper/dists
+          zipStoreBase=GRADLE_USER_HOME
+          zipStorePath=wrapper/dists
+          distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
+          EOF
       - name: Build APK
         script: flutter build apk --release
     artifacts:
