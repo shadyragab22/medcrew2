@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "677345499540",
+    "project_id": "med-crew",
+    "storage_bucket": "med-crew.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677345499540:android:37327fb9c98f04ff559781",
+        "android_client_info": {
+          "package_name": "com.lim.medcrew"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7AeXgMFzJvhGAbRY8ov5gmPDUGD_T3yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677345499540:android:23dee7629f81ebc0559781",
+        "android_client_info": {
+          "package_name": "medcrew.lim.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7AeXgMFzJvhGAbRY8ov5gmPDUGD_T3yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
